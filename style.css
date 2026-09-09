@@ -1,0 +1,640 @@
+/* =========================================================
+   MOBILE MIND AI
+   LIGHT BLUE PREMIUM UI
+   ========================================================= */
+
+
+/* =========================================================
+   ROOT VARIABLES
+   ========================================================= */
+
+:root {
+    --bg: #eef6ff;
+    --bg-soft: #f7fbff;
+
+    --card: #ffffff;
+    --card-hover: #f0f7ff;
+
+    --border: #d7e7f7;
+    --border-hover: #8fc5f5;
+
+    --primary: #3b82f6;
+    --primary-hover: #2563eb;
+
+    --text: #172b4d;
+    --text-dark: #10213a;
+
+    --muted: #64748b;
+
+    --success: #16a34a;
+    --danger: #dc2626;
+
+    --shadow: 0 8px 25px rgba(59, 130, 246, 0.08);
+    --shadow-hover: 0 12px 30px rgba(59, 130, 246, 0.14);
+}
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html,
+body {
+    background: #eef6ff !important;
+    color: var(--text) !important;
+}
+
+[data-testid="stAppViewContainer"] {
+    background:
+        linear-gradient(
+            135deg,
+            #eef6ff 0%,
+            #f8fbff 50%,
+            #eaf4ff 100%
+        ) !important;
+
+    min-height: 100vh;
+}
+
+[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+.main {
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.block-container {
+    max-width: 1180px !important;
+
+    padding-top: 3rem !important;
+    padding-bottom: 4rem !important;
+
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1 {
+    color: #102a43 !important;
+
+    font-size: 2.7rem !important;
+    font-weight: 800 !important;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 0.35rem !important;
+}
+
+h2 {
+    color: #173b63 !important;
+
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+
+    letter-spacing: -0.4px;
+}
+
+h3 {
+    color: #1e4268 !important;
+
+    font-size: 1.35rem !important;
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+p {
+    color: var(--muted);
+}
+
+[data-testid="stMarkdownContainer"] {
+    color: var(--text) !important;
+}
+
+[data-testid="stMarkdownContainer"] p {
+    color: #64748b !important;
+
+    line-height: 1.7;
+}
+
+[data-testid="stMarkdownContainer"] strong {
+    color: var(--text-dark) !important;
+}
+
+[data-testid="stCaptionContainer"] {
+    color: #71839a !important;
+}
+
+[data-testid="stCaptionContainer"] p {
+    color: #71839a !important;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+hr {
+    border: none !important;
+
+    border-top: 1px solid #d6e6f5 !important;
+
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+
+/* =========================================================
+   SELECTBOX
+   ========================================================= */
+
+[data-testid="stSelectbox"] label {
+    color: #1e3a5f !important;
+
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+[data-baseweb="select"] {
+    background: #ffffff !important;
+
+    border-radius: 14px !important;
+
+    box-shadow:
+        0 5px 18px rgba(59, 130, 246, 0.07);
+}
+
+[data-baseweb="select"] > div {
+    background: #ffffff !important;
+
+    border: 1px solid #cfe1f3 !important;
+
+    color: #1e3a5f !important;
+
+    border-radius: 14px !important;
+
+    min-height: 48px;
+}
+
+[data-baseweb="select"] > div:hover {
+    border-color: #7bb7ef !important;
+
+    box-shadow:
+        0 0 0 3px rgba(59, 130, 246, 0.08);
+}
+
+[data-baseweb="select"] input {
+    color: #1e3a5f !important;
+}
+
+[data-baseweb="select"] svg {
+    fill: #64748b !important;
+}
+
+
+/* =========================================================
+   SELECTBOX DROPDOWN
+   ========================================================= */
+
+[data-baseweb="popover"] {
+    background: #ffffff !important;
+
+    border: 1px solid #d6e6f5 !important;
+
+    border-radius: 12px !important;
+
+    box-shadow:
+        0 12px 30px rgba(30, 64, 100, 0.12);
+}
+
+[role="option"] {
+    background: #ffffff !important;
+
+    color: #1e3a5f !important;
+
+    padding: 12px 14px !important;
+}
+
+[role="option"]:hover {
+    background: #edf6ff !important;
+
+    color: #2563eb !important;
+}
+
+
+/* =========================================================
+   CHECKBOX
+   ========================================================= */
+
+[data-testid="stCheckbox"] {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f7fbff
+        ) !important;
+
+    border: 1px solid #d5e6f6 !important;
+
+    border-radius: 13px !important;
+
+    padding: 11px 14px !important;
+
+    margin-bottom: 9px;
+
+    transition: all 0.2s ease;
+
+    box-shadow:
+        0 4px 14px rgba(59, 130, 246, 0.05);
+}
+
+[data-testid="stCheckbox"]:hover {
+    background: #f0f7ff !important;
+
+    border-color: #8fc5f5 !important;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 20px rgba(59, 130, 246, 0.10);
+}
+
+[data-testid="stCheckbox"] label {
+    color: #1e3a5f !important;
+
+    font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.stButton > button {
+    width: 100% !important;
+
+    min-height: 48px !important;
+
+    border-radius: 13px !important;
+
+    border: 1px solid #c9dff3 !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f3f8fd
+        ) !important;
+
+    color: #1e3a5f !important;
+
+    font-size: 15px !important;
+
+    font-weight: 700 !important;
+
+    transition: all 0.2s ease !important;
+
+    box-shadow:
+        0 5px 16px rgba(59, 130, 246, 0.07);
+}
+
+.stButton > button:hover {
+    background:
+        linear-gradient(
+            145deg,
+            #edf6ff,
+            #e5f2ff
+        ) !important;
+
+    border-color: #70afe8 !important;
+
+    color: #1558a6 !important;
+
+    transform: translateY(-2px) !important;
+
+    box-shadow:
+        0 10px 25px rgba(59, 130, 246, 0.13);
+}
+
+.stButton > button:active {
+    transform: translateY(0) !important;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.stButton > button[kind="primary"] {
+    background:
+        linear-gradient(
+            135deg,
+            #4f8ff7,
+            #2563eb
+        ) !important;
+
+    border-color: #3b82f6 !important;
+
+    color: #ffffff !important;
+
+    box-shadow:
+        0 8px 22px rgba(37, 99, 235, 0.20);
+}
+
+.stButton > button[kind="primary"]:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #60a5fa,
+            #3b82f6
+        ) !important;
+
+    border-color: #3b82f6 !important;
+
+    color: #ffffff !important;
+
+    box-shadow:
+        0 12px 28px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================================
+   BORDER CARDS
+   ========================================================= */
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8fbff
+        ) !important;
+
+    border: 1px solid #d6e6f5 !important;
+
+    border-radius: 16px !important;
+
+    box-shadow:
+        0 7px 22px rgba(59, 130, 246, 0.07);
+
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        border-color 0.22s ease;
+}
+
+[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    border-color: #9ac8f3 !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f1f8ff
+        ) !important;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 13px 30px rgba(59, 130, 246, 0.13);
+}
+
+
+/* =========================================================
+   CARD HEADINGS
+   ========================================================= */
+
+[data-testid="stVerticalBlockBorderWrapper"] h3 {
+    color: #1e4268 !important;
+
+    font-size: 16px !important;
+
+    font-weight: 700 !important;
+
+    margin-bottom: 8px !important;
+}
+
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+[data-testid="stVerticalBlockBorderWrapper"] p {
+    color: #64748b !important;
+
+    font-size: 14px !important;
+
+    line-height: 1.6 !important;
+}
+
+[data-testid="stVerticalBlockBorderWrapper"] strong {
+    color: #173b63 !important;
+}
+
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+[data-testid="stAlert"] {
+    border-radius: 14px !important;
+
+    border: 1px solid #d5e6f6 !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f5faff
+        ) !important;
+
+    color: #1e3a5f !important;
+
+    box-shadow:
+        0 7px 20px rgba(59, 130, 246, 0.06);
+}
+
+
+/* =========================================================
+   INPUT FIELDS
+   ========================================================= */
+
+[data-testid="stTextInput"] label,
+[data-testid="stNumberInput"] label {
+    color: #1e3a5f !important;
+
+    font-size: 14px !important;
+
+    font-weight: 700 !important;
+}
+
+[data-testid="stTextInput"] input,
+[data-testid="stNumberInput"] input {
+    background: #ffffff !important;
+
+    color: #1e3a5f !important;
+
+    border: 1px solid #cfe1f3 !important;
+
+    border-radius: 13px !important;
+
+    min-height: 46px !important;
+}
+
+[data-testid="stTextInput"] input:focus,
+[data-testid="stNumberInput"] input:focus {
+    border-color: #70afe8 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(59, 130, 246, 0.08) !important;
+}
+
+
+/* =========================================================
+   CODE
+   ========================================================= */
+
+code {
+    background: #eaf4ff !important;
+
+    color: #24558a !important;
+
+    border-radius: 6px;
+
+    padding: 2px 6px;
+}
+
+
+/* =========================================================
+   FOOTER / CAPTION
+   ========================================================= */
+
+[data-testid="stCaptionContainer"] p {
+    text-align: center !important;
+
+    color: #7890a8 !important;
+
+    font-size: 13px !important;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* =========================================================
+   HIDE STREAMLIT BRANDING
+   ========================================================= */
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eaf3fc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b4d0e9;
+
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8eb8dc;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .block-container {
+        padding-top: 1.5rem !important;
+        padding-bottom: 2rem !important;
+
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+
+        letter-spacing: -0.7px;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    h3 {
+        font-size: 1.15rem !important;
+    }
+
+    .stButton > button {
+        min-height: 46px !important;
+
+        font-size: 14px !important;
+    }
+
+    [data-testid="stVerticalBlockBorderWrapper"] {
+        border-radius: 14px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL SCREEN
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .block-container {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    [data-testid="stCheckbox"] {
+        padding: 9px 11px !important;
+    }
+
+    .stButton > button {
+        min-height: 44px !important;
+    }
+}
